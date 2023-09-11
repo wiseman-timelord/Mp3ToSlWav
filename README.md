@@ -10,17 +10,17 @@ Mp3ToWav Converter is a Python script that converts MP3 files to WAV format. Thi
 3. **Mono Conversion:** Converts stereo audio to mono.
 4. **Sample Rate and Bit Depth:** Sets the sample rate to 44.1 kHz and bit depth to 16-bit.
 
-## Usage
-1. Place your MP3 files in the `./INPUT` directory.
-2. Run the script.
-3. Converted WAV files will be saved in the `./OUTPUT` directory.
-
-**Notes:** Make sure you have the required Python packages installed. You can install them using pip: `pip install pydub`.
+## Usage (windows instruction only)
+1. Run 'Install.bat" to install the requirements.
+2. Go to "https://github.com/BtbN/FFmpeg-Builds/releases" download windows x64 zip, extract this to folder to "Program Files" or the likes and shorten the folder name, the "./bin" folder inside must then be  system's PATH (be careful editing PATH). 
+3. Place your MP3 files in the `./INPUT` directory.
+4. Run 'Mp3ToWav.bat'.
+5. Converted WAV files will be saved in the `./OUTPUT` directory, you must manage the rest.
 
 ## Requirements
-- Python 3.x
-- `pydub` Python package
-- FFmpeg executable in your system's PATH
+* FFmpeg - Got mine from "https://github.com/BtbN/FFmpeg-Builds/releases"
+* Python 3.x
+* Requirements in 'requirements.txt'.
 
 ## Disclaimer
 Use at your own risk. This script modifies audio files. Always keep a backup of your original files. If you do not fully understand what the script does, do some research or do not use the script.
