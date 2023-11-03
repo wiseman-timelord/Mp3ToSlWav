@@ -1,5 +1,6 @@
 # Mp3ToWav Converter
-Status: Working.
+## Status:
+Working(ish). The batches for this program may only run on Windows 10 due to the different PowerShell launch commands required for various OS versions, that microsoft have bizarly chosen to use for each OS, and may cause endless launch loop on other systems.
 
 ## Description
 Mp3ToWav Converter is a Python script that converts MP3 files to WAV format. This is particularly useful for script compatibility or for use in platforms like Second Life. The script not only converts the files but also normalizes the volume, converts them to mono, and sets the sample rate to 44.1 kHz and bit depth to 16-bit.
