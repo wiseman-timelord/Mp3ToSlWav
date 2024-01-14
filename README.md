@@ -23,5 +23,5 @@ Mp3ToWav Converter is a Python script that converts MP3 files to WAV format. Thi
 * Python 3.x
 * Requirements in 'requirements.txt'.
 
-### DISCLAIMER
-Read "License.Txt", its, what its there for and why its supplied with the package.
+## DISCLAIMER
+The "License.Txt" covers, this and relating, stuff.
