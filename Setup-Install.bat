@@ -61,6 +61,14 @@ if exist ".\cache\ffmpeg-master-latest-win64-gpl" (
     echo ERROR: Unpacked ffmpeg folder not found.
 )
 echo.
+timeout /t 1 >nul
+
+:: Cleaning
+echo Cleaning Up...
+rd /s /q ".\cache"
+echo ...Cleaning Complete.
+echo.
+timeout /t 1 >nul
 
 :: End Of File
 :EoF
