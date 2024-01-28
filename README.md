@@ -16,7 +16,8 @@ Mp3ToWav Converter is a Python script that converts MP3 files to WAV format. Thi
 1. Ensure to have "CMake" installed, its included in the first workflow option in [Ms Build Tools](https://download.visualstudio.microsoft.com/download/pr/94f523ce-4fb4-4d35-83ec-e749572654de/0aae346343e0f03dfe88496cbf3c6fdc2a212f617fd2960daa72727acb97c861/vs_BuildTools.exe), you do not need to select the other options, and yes that 1 option alone is a ~1.7GB download, but its likely other programs will require cMake at some point.
 2. Run 'Setup-Install.bat" as Admin to, setup and install, libraries (heres where cMake gets used), and also create program folders. 
 3. Place your MP3 files in the `./Input` directory.
-4. Run 'Mp3ToSlWav.Bat', interact with menu, converted files will be saved in the `./Output` directory.
+4. Run 'Mp3ToSlWav.Bat', select 1 to load `main.py`.
+5. Converted files will be saved in the `./Output` directory. Run again as required by pressing `r`, or otherwise press `x` to exit. 
 
 ### REQUIREMENTS
 - FFmpeg (installed by Setup-Install)
