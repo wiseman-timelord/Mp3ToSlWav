@@ -1,9 +1,9 @@
 # Mp3ToWav Converter
 ## Status:
-Working(ish). The batches for this program may only run on Windows 10 due to the different PowerShell launch commands required for various OS versions, that microsoft have bizarly chosen to use for each OS, and may cause endless launch loop on other systems.
+Working. Revisited on 2024/01/28, wait for the update.  
 
 ## Description
-Mp3ToWav Converter is a Python script that converts MP3 files to WAV format. This is particularly useful for script compatibility or for use in platforms like Second Life. The script not only converts the files but also normalizes the volume, converts them to mono, and sets the sample rate to 44.1 kHz and bit depth to 16-bit.
+Mp3ToWav Converter is a Python script that converts MP3 files to WAV format. This is particularly useful for, low resource use or scripts or Second Life. The script not only converts the files but also normalizes the volume, converts them to mono, and sets the sample rate to 44.1 kHz and bit depth to 16-bit, this makes the resulting files HIGHLY compatible.
 
 ## Features
 1. **Convert to WAV:** Converts MP3 files to WAV format.
@@ -11,18 +11,17 @@ Mp3ToWav Converter is a Python script that converts MP3 files to WAV format. Thi
 3. **Mono Conversion:** Converts stereo audio to mono.
 4. **Sample Rate and Bit Depth:** Sets the sample rate to 44.1 kHz and bit depth to 16-bit.
 
-## Usage (windows instruction only)
-1. Run 'Install.bat" to install the requirements.
-2. Go to "https://github.com/BtbN/FFmpeg-Builds/releases" download windows x64 zip, extract this to folder to "Program Files" or the likes and shorten the folder name, the "./bin" folder inside must then be  system's PATH (be careful editing PATH). 
-3. Place your MP3 files in the `./INPUT` directory.
-4. Run 'Mp3ToWav.bat'.
-5. Converted WAV files will be saved in the `./OUTPUT` directory, you must manage the rest.
+## Usage.
+1. Ensure to have "CMake" installed, its included in the first workflow option in [Ms Build Tools](https://download.visualstudio.microsoft.com/download/pr/94f523ce-4fb4-4d35-83ec-e749572654de/0aae346343e0f03dfe88496cbf3c6fdc2a212f617fd2960daa72727acb97c861/vs_BuildTools.exe), you do not need to select the other options, and yes that 1 option alone is a ~1.7GB download, but its likely other programs will require cMake at some point.
+2. Run 'Setup-Install.bat" as admin to, setup and install, libraries (heres where cMake gets used), and also create program folders. 
+3. Place your MP3 files in the `./Input` directory.
+4. Run 'Mp3ToWav.bat', converted files will be saved in the `./Output` directory.
 
 ## Requirements
-- FFmpeg
+- FFmpeg (installed by Setup-Install)
 - Python 3.x
-- Requirements in 'requirements.txt'.
-- [Ms build tools](https://download.visualstudio.microsoft.com/download/pr/94f523ce-4fb4-4d35-83ec-e749572654de/0aae346343e0f03dfe88496cbf3c6fdc2a212f617fd2960daa72727acb97c861/vs_BuildTools.exe)
+- Libraries in 'requirements.txt' (installed by Setup-Install)
+- cMake
 
 ## DISCLAIMER
 This software is subject to the terms in License.Txt, covering usage, distribution, and modifications. For full details on your rights and obligations, refer to License.Txt.
