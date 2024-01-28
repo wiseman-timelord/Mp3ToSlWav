@@ -1,7 +1,7 @@
 # Mp3ToSlWav
 
 ### STATUS
-Working. Revisited on 2024/01/28, wait for the update.  
+Working. Revisited on 2024/01/28, wait for the update there will be a release.  
 
 ## DESCRIPTION
 Mp3ToWav Converter is a Python script that converts MP3 files to WAV format. This is particularly useful for, low resource use or scripts or Second Life. The script not only converts the files but also normalizes the volume, converts them to mono, and sets the sample rate to 44.1 kHz and bit depth to 16-bit, this makes the resulting files HIGHLY compatible. There are no menus, upon being activated it processes all files from, Input into Output, simples.
