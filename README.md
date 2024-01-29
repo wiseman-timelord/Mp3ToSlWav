@@ -1,7 +1,7 @@
 # Mp3ToSlWav
 
 ### STATUS
-Working. Revisited on 2024/01/28, wait for the update there will be a release.  
+Working. Revisited on 2024/01/28.
 
 ## DESCRIPTION
 Mp3ToSLWav converts MP3 files to WAV format. This is particularly useful for, low resource use or scripts or Second Life. The script not only converts the files but also normalizes the volume; the specific format is mono, 44.1kHz, 16-bit.
