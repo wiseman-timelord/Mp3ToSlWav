@@ -39,6 +39,7 @@ Select :- Run Again = R, Exit Program = X:
 ```
 
 ## USAGE
+- Its currently for windows...
 1. Ensure to have "CMake" installed, its included in the first workflow option in [Ms Build Tools](https://download.visualstudio.microsoft.com/download/pr/94f523ce-4fb4-4d35-83ec-e749572654de/0aae346343e0f03dfe88496cbf3c6fdc2a212f617fd2960daa72727acb97c861/vs_BuildTools.exe), you do not need to select the other options, and yes that 1 option alone is a ~1.7GB download, but its likely other programs will require cMake at some point.
 2. Run 'Setup-Install.bat" as Admin to, setup and install, libraries (heres where cMake gets used), and also create program folders. 
 3. Place your MP3 files in the `./Input` directory.
@@ -50,6 +51,10 @@ Select :- Run Again = R, Exit Program = X:
 - Python 3.x
 - Libraries in 'requirements.txt' (installed by Setup-Install)
 - cMake
+
+## DEVELOPMENT
+- Linux compatibility.
+- Formats for other games.
 
 ## DISCLAIMER
 This software is subject to the terms in License.Txt, covering usage, distribution, and modifications. For full details on your rights and obligations, refer to License.Txt.
