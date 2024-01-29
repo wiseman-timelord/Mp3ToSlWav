@@ -35,7 +35,7 @@ swish.mp3 > norm, mono, 44.1kHz, 16-bit, .wav
 Conversion complete.
 
 
-Select :- Run Again = R, Exit Program = X:
+Select:- Run Again = R, Exit Program = X:
 ```
 
 ## USAGE
