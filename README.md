@@ -56,7 +56,7 @@ Select :- Run Again = R, Exit Program = X:
 - Linux compatibility: cMake for linux? This requires research.
 - Formats for other games: Bethesda games maybe.
 - Large file support: Break down mp3's larger than 10 seconds into 10 second segments, logically named 000-999. 
-- Improve display: try to show input format, and just print the sl format at the top once or something.
+- Improve display: try to show input format for each file, and just print the sl format at the top once or something, maybe file size differences.
 
 ## DISCLAIMER
 This software is subject to the terms in License.Txt, covering usage, distribution, and modifications. For full details on your rights and obligations, refer to License.Txt.
