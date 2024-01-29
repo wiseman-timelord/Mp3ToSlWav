@@ -1,1 +1,3 @@
-AudioSegment
+pydub
+audiosegment
+colorama

@@ -1,17 +1,23 @@
-REM Script: FilesCollect.Bat
+REM Script: Mp3ToSlWav.Bat
 
 @echo off
+setlocal
 
 :: Initialization
 mode con cols=64 lines=30
 color 80
 title Mp3ToSlWav
 cd /d "%~dp0"
-set ErrorLog=Errors-Crash.Log
+set "scriptDir=%~dp0"
+set "ffmpegBinPath=%scriptDir%libraries\ffmpeg\bin"
+set "PATH=%ffmpegBinPath%;%PATH%"
 echo.
 echo Launcher Initialized...
 echo.
+echo.
 timeout /t 2 /nobreak >nul
+
+:: Maintenance
 echo Cleaning up..
 if exist ".\Errors-Crash.Log" (
     echo ...Deleting Log...
@@ -20,6 +26,7 @@ if exist ".\Errors-Crash.Log" (
 echo ..Cleaning Done.
 echo.
 timeout /t 1 /nobreak >nul
+
 
 :: Main Menu
 :menu
@@ -32,7 +39,6 @@ echo     ^|^_^|  ^|^_^|  ^_^_^/^_^_^_^_^/ ^|^_^|^\^_^_^_^/^_^_^_^_^/^|^_^|  ^\^_
 echo            ^|^_^|               
 echo.         
 echo ========================( Mp3ToSlWav )=========================
-echo.
 echo.
 echo.
 echo.
@@ -64,11 +70,27 @@ goto menu
 
 :: Check for presence of python and execute main.py
 :executeMain
-where python3 >nul 2>&1 && (
-    python3 ".\main.py" 2>> "%ErrorLog%"
-) || (
-    python ".\main.py" 2>> "%ErrorLog%"
+python3 -c "print('Python 3 is installed.')" >nul 2>>&1
+if %errorlevel% == 0 (
+    echo Running Python3 Script...
+    python3.exe ".\main.py" 2>> "Errors-Crash.Log"
+    goto afterExecution
+) 
+
+python -c "print('Python is installed.')" >nul 2>>&1
+if %errorlevel% == 0 (
+    echo Running Python Script...
+    python.exe ".\main.py" 2>> "Errors-Crash.Log"
+    goto afterExecution
 )
+
+echo Error: Python Issues.
+goto afterExecution
+
+:: After Execution
+:afterExecution
+color 80
+cls
 echo.
 timeout /t 1 /nobreak >nul
 echo Returning to menu..
@@ -101,5 +123,8 @@ goto menu
 
 :: End Function
 :end
-echo ...Exit Process Initiated.
+echo ...Exit Initiated.
 timeout /t 5 /nobreak >nul
+
+endlocal
+exit /b 0
