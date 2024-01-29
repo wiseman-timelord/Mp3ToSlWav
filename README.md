@@ -54,7 +54,7 @@ Select:- Run Again = R, Exit Program = X:
 
 ## DEVELOPMENT
 - Linux compatibility: cMake for linux? This requires research.
-- Formats for other games: Menu and json, toggle between differing sample formats before begin, most likely Bethesda games, and return to menu after processing, prompt "Select:- Options = 1-1, Begin = B, Exit = X: ", option 1 being "Output Format".
+- Formats for other games: Menu and json, toggle between differing sample formats before begin, most likely, Second Life/Various Bethesda Games, and return to menu after processing, prompt "Select:- Options = 1-1, Begin = B, Exit = X: ", option 1 being "Output Format".
 - Large file support: Break down mp3's larger than 10 seconds into 10 second segments, logically named "*_000.wav"-"*_999.wav". 
 - Improve display: try to show input format for each file, the sl format should be shown on main menu instead under the toggle function, see above.
 - Summary Screen: Report at end of processing files, size before and after, total inputted, total outputtedm, time taken, scoring system for processing ((files outputted/time taken seconds)*100)=score, use json for highscore/lowscore.
