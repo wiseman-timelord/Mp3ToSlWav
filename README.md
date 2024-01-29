@@ -53,8 +53,9 @@ Select :- Run Again = R, Exit Program = X:
 - cMake
 
 ## DEVELOPMENT
-- Linux compatibility; cMake for linux? This requires research.
-- Formats for other games; Bethesda games maybe.
+- Linux compatibility: cMake for linux? This requires research.
+- Formats for other games: Bethesda games maybe.
+- Large file support: Break down mp3's larger than 10 seconds into 10 second segments, logically named 000-999. 
 
 ## DISCLAIMER
 This software is subject to the terms in License.Txt, covering usage, distribution, and modifications. For full details on your rights and obligations, refer to License.Txt.
