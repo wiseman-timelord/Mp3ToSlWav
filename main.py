@@ -41,7 +41,7 @@ def process_files():
 
 def user_choice():
     while True:
-        sys.stdout.write("\n\nSelect :- Run Again = R, Exit Program = X: ")  # Explicitly write to stdout
+        sys.stdout.write("\n\nSelect:- Run Again = R, Exit Program = X: ")  # Explicitly write to stdout
         sys.stdout.flush()  # Ensure the prompt is displayed immediately
         choice = input().lower()  # Capture the input
         if choice == 'x':
